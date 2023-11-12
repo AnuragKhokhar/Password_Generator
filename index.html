@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Password Generator</title>
+    
+</head>
+<body class="bg-slate-900 flex items-center justify-center h-screen">
+    
+    <div class="border-2 rounded-md border-orange-200 text-center p-10 px-12">
+        <h1 class="text-amber-100 mb-7 font-semibold text-4xl">Password Generator</h1>
+        <input type="text" placeholder="Click on Generate Button" class="rounded-md focus:outline-none mb-7 px-24 py-2 bg-slate-300 text-gray-900 text-center" readonly id="inp">
+
+        <div class="flex items-start gap-8 justify-center">
+            <button id="btn" class="bg-cyan-700 rounded-md p-1 px-4 text-xl text-stone-100 hover:font-semibold focus:cursor-default">Generate</button>
+            <button class="bg-cyan-700 rounded-md p-1 px-4 text-xl text-stone-100 hover:font-semibold focus:cursor-default" id="copy">Copy To Clipboard</button>
+        </div>
+
+        <div class="text-slate-100 mt-8 text-xl">
+            <div class="flex items-center justify-between mb-3">
+                <label class="text-left">Password Length</label>
+                <input type="number" class="rounded-md bg-transparent border-[1px] border-amber-100 w-16" id="length">    
+            </div> 
+            <div class="flex items-center justify-between mb-3">
+                <label class="text-left" for="">Include UpperCase Letters</label>
+                <input type="checkbox" class="rounded-md w-2/12 bg-transparent border-2 border-amber-100 h-4" id="check1">
+            </div>
+            <div class="flex items-center justify-between mb-3">
+                <label class="text-left" for="">Include LowerCase Letters</label>
+                <input type="checkbox" class="rounded-md w-2/12 bg-transparent border-2 border-amber-100 h-4" id="check2">
+            </div>
+            <div class="flex items-center justify-between mb-3">
+                <label class="text-left" for="">Include Numbers</label>
+                <input type="checkbox" class="rounded-md w-2/12 bg-transparent border-2 border-amber-100 h-4" id="check3">
+            </div>
+            <div class="flex items-center justify-between mb-3">
+                <label for="">Include Symbols</label>
+                <input type="checkbox" class="rounded-md w-2/12 bg-transparent border-2 border-amber-100 h-4" id="check4">
+            </div>
+        </div>
+    </div>
+
+    <script src="./passGen.js"></script>
+</body>
+</html>
