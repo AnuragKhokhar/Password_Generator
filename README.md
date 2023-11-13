@@ -11,3 +11,6 @@ A simple password generator built using HTML, Tailwind CSS, and JavaScript.
 
 ## Screenshot
 ![Output Screenshot](output_ScreenShot.png)
+
+## Demo
+Check out the live demo: [Vercel Deployed Link](https://password-generator-eta-three.vercel.app/)
